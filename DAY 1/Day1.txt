@@ -1,0 +1,64 @@
+->Install Python from web.
+->add python to the path to access from cmd.
+->check python installation and version using
+	->py --version or py -3 --version
+->With installation of python you get IDLE which is can be used to write, debug and execute, your Python code.
+->Its good to use a IDE but, which gets you intelliseense, code completion, and better error highlighting.
+->We will use VS Code.
+->First install the python extension in VS Code, from extension marketplace and after that select the python interpreter.
+->To launch VS Code in from source folder, open CMD in that location and type code .
+->Basic Hello World and Concatenation.
+
+---------------------------------------------IMP------------------------------------------------------
+->Its Preferred generally in python to install packages in the virtual environments, not in global environments so that, one You instead use a project-specific virtual environment that contains a copy of a global interpreter. Once you activate that environment, any packages you then install are isolated from other environments. Such isolation reduces many complications that can arise from conflicting package versions. To create a virtual environment and install the required packages, enter the following commands as appropriate for your operating system:
+
+	-->py -3 -m venv .venv
+	-->.venv/scripts/activate
+
+->If the activate command generates the message "Activate.ps1 is not digitally signed. You cannot run this script on the current system.", then you need to temporarily change the PowerShell execution policy to allow scripts to run.
+
+	-->Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+->Select your new environment by using the Python: Select Interpreter command from the Command Palette.
+
+->Then You can install the required python packages like numpy, matplotlib, pandas etc., using:
+
+	-->python -m pip install matplotlib
+
+--------------------------------------------------------------------------------------------------------------
+
+-> Lists In Python:
+	--> We can create a list in python by following this process.
+	1. Convert each of the names into strings by surrounding the data 	
+with quotes.
+	2. Seperate each of the list items from the next with a coma.
+	3. Surround the list of items with opening and closing square brackets.
+	4. Assign the list to an identifier using the assignment operator(=).
+
+Q. Don't you need to declare type information for your list?
+Ans. No, because Python's variable identifiers don't have a type.
+-->Python Identifiers are simply names that refer to a data object of some type.
+-->Think Of Python's list as high level collection. The type of data items is not important to the list. It's OK to state that your movies list is a collection of strings," but Python doesn't need to be told all this. Python just needs to know its a list and when you start with [], it understands that its a list.
+
+--> Therefore LISTS ARE LIKE ARRAYS.
+--> When you create a list in Python, the interpreter creates an array-like data structure in memory to hold your data, with your data items stacked from the bottopm-up. 
+--> Like Arrays, Lists also starts with index 0. Therefore, the first item takes up the 0th index and 2nd one First and So On.
+-->List are like Arrays, but in python there are many handy functions which we can do on list as they are full blown Python Objects.
+-->List Functions(In Day1.py).
+-->Python lists can contain data of mixed type. It’s perfectly OK
+to mix strings with numbers within the same Python list. In fact,
+you can mix more than just strings and numbers; you can store
+data of any type in a single list, if you like.
+
+-->Traversing lists using for loop.
+
+for identifier in list_name
+	print(identifier)
+
+--> The list-processing code is referred to by Python programmers as the suite. The target identifier is like any other name in your code. As your list is iterated over, the target identifier is assigned each of the data values in your list, in turn. This means that each time the loop code executes, the target identifier refers to a different data value. The loop keeps iterating until it exhausts all of your list’s data, no matter how big or small your list is.
+
+--->Like most other programming languages, Python has some rules that must be adhered to when creating names. Names can start with a letter character or an underscore, then include any number of letter characters, numbers, and/or underscores in the rest of the name. Strange characters (such as %$£) are not allowed and you’ll obviously want to use names that have meaning within the context of your code. Names like members, the_time , and people are much better than m, t, and p, aren’t they?
+--->Python is Case Sensitive.
+--->""or'' both works fine while defining the strings.
+---> You can have list of lists.
+
+
